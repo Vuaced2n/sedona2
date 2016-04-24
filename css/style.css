@@ -22,3 +22,87 @@ h2{
   font-weight: bold;
   font-family: PT Sans;
 }
+
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.welcome-block{
+  background: yellow;
+}
+
+
+.navigation-item,
+.header,
+.description-main,
+.description,
+.advantages-block,
+.interest-block,
+.map,
+.selection-block,
+.sorting-block,
+.results-block,
+.sorting-range{
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid red;
+}
+
+.navigation-item ul,
+.sorting-range ul,
+.sorting-ab ul{
+  display: flex;
+}
+
+.navigation-item li,
+.sorting-range li,
+.sorting-ab li{
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*
+.header-logo - как сделать посередине? position: absolute?
+*/
+
+.welcome-title{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-block{
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description .description-item{
+  text-align: center;
+  justify-content: space-between;
+}
+
+.advantages-item{
+  text-align: center;
+}
+
+.interest-item{
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer{
+  display: flex;
+  outline: 2px solid red;
+  justify-content: space-around;
+}
+
+.results-block{
+  flex-direction: column;
+}
