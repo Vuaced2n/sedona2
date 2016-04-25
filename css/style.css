@@ -34,32 +34,16 @@ h2{
   background: yellow;
 }
 
-
-.navigation-item,
-.header,
-.description-main,
-.description,
-.advantages-block,
-.interest-block,
-.map,
-.selection-block,
-.sorting-block,
-.results-block,
-.sorting-range{
+section{
   display: flex;
-  justify-content: space-between;
   outline: 2px solid red;
 }
 
-.navigation-item ul,
-.sorting-range ul,
-.sorting-ab ul{
+ul{
   display: flex;
 }
 
-.navigation-item li,
-.sorting-range li,
-.sorting-ab li{
+ul li{
   list-style: none;
   margin-left: 10px;
   margin-right: 10px;
@@ -83,7 +67,6 @@ h2{
 
 .description .description-item{
   text-align: center;
-  justify-content: space-between;
 }
 
 .advantages-item{
@@ -91,9 +74,6 @@ h2{
 }
 
 .interest-item{
-  width: 550px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
