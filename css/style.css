@@ -18,7 +18,7 @@ h1{
 h2{
   font-size: 21px;
   line-height: 21px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: PT Sans;
 }
@@ -29,60 +29,164 @@ h2{
   margin-right: auto;
 }
 
-
-.welcome-block{
-  background: yellow;
-}
-
 section{
   display: flex;
-  outline: 2px solid red;
+  width: 1200px;
+  /*outline: 2px solid red;*/
 }
 
-ul{
+header ul{
+  margin-top: 0px;
   display: flex;
+  align-items: center;
+  height: 57px;
+  /*outline: 2px solid red;*/
 }
 
-ul li{
+header ul li{
   list-style: none;
-  margin-left: 10px;
-  margin-right: 10px;
+  /*min-width: 200px;*/
+  /*outline: 2px solid red;*/
 }
 
-/*
-.header-logo - как сделать посередине? position: absolute?
-*/
+header ul li:nth-child(1){
+  margin-left: 30px;
+  flex-grow: 2;
+}
+
+header ul li:nth-child(2){
+  /*margin-left: 40px; если делать отступами, меню получалось практически
+                        попиксельно, но сомневаюсь что это правильно*/
+  flex-grow: 3;
+}
+
+header ul li:nth-child(3){
+  /*margin-left: 290px;*/
+  flex-grow: 3;
+  text-align: right;
+}
+
+header ul li:nth-child(4){
+  margin-right: 65px;
+  flex-grow: 2;
+  text-align: right;
+}
+
+.navigation-item a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header-logo{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.welcome-block{
+  margin-top: -16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../img/background_photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 510px;
+}
 
 .welcome-title{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 75px;
 }
 
 .description-block{
-  width: 550px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .description .description-item{
   text-align: center;
+  width: 400px;
+}
+
+.description .description-colored{
+  background-color: #81b3d2;
+  height: 256px;
+  color: white;
+}
+
+.description-picture{
+  width: 800px;
 }
 
 .advantages-item{
   text-align: center;
+  width: 400px;
+}
+
+.interest-block{
+  /*align-content: center;*/
 }
 
 .interest-item{
   text-align: center;
 }
 
-footer{
+.map{
+  height: 473px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+}
+
+.selection-block{
+  margin-top: -16px;
+  background-image: url(../img/filter_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 215px;
+  color: white;
+}
+
+.selection-form{
   display: flex;
-  outline: 2px solid red;
-  justify-content: space-around;
+}
+
+.selection-form button{
+  height: 35px;
+  width: 135px;
+}
+
+.sorting-block{
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .results-block{
   flex-direction: column;
+}
+
+.result-item{
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.result-image{
+  margin-left: 65px;
+}
+
+.result-description{
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.rating-item{
+  margin-right: 65px;
+  text-align: right;
+}
+
+footer{
+  display: flex;
+  outline: 2px solid red;
+  justify-content: space-around;
 }
