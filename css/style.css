@@ -125,6 +125,7 @@ header ul li:nth-child(4){
 }
 
 .interest-block{
+  justify-content: center;
   /*align-content: center;*/
 }
 
@@ -173,11 +174,47 @@ header ul li:nth-child(4){
 
 .result-image{
   margin-left: 65px;
+  height: 90px;
+  width: 135px;
 }
 
 .result-description{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   margin-left: 30px;
   flex-grow: 1;
+  height: 94px;
+  /*outline: 1px solid red;*/
+}
+
+.result-description h1{
+  min-width: 770px;
+  margin-top: 0px;
+  /*outline: 1px solid red;*/
+}
+
+.result-description a{
+  text-decoration: none;
+  color: black;
+}
+
+.result-item .result-description .details-item a{
+  background-color: #81b3d2;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.result-item .result-description .reserve-item a{
+  background-color: #766357;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .rating-item{
