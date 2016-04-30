@@ -3,7 +3,7 @@ body{
   line-height: 21px;
   color: black;
   font-weight: normal;
-  font-family: PT Sans;
+  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
 }
 
@@ -133,6 +133,16 @@ header ul li:nth-child(4){
   text-align: center;
 }
 
+.interest-item a{
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #766357;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .map{
   height: 473px;
   background-image: url(../img/map.png);
@@ -149,16 +159,141 @@ header ul li:nth-child(4){
 }
 
 .selection-form{
+  position: relative;
   display: flex;
+  width: 1056;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infrasrtrucure-item{
+  width: 240px;
+  padding-top: 15px;
+  /*outline: 1px solid red;*/
+}
+
+.housetype-item{
+  width: 240px;
+  /*outline: 1px solid red;*/
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.cost-filter{
+  margin-left: auto;
+  margin-right: 0px;
+  width: 328px;
+  padding-top: 30px;
+  /*outline: 1px solid red;*/
+}
+
+.cost-filter-title{
+  margin-bottom: 12px;
+}
+
+.cost-control{
+  position: relative;
+  border: 2px solid white;
+  margin-left: 10px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.cost-control::after{
+  position: absolute;
+  content: "";
+  border: 1px solid white;
+  height: 22px;
+  left: 50%;
+  top: 5px;
+}
+
+.cost-control label{
+  padding-left: 65px;
+}
+
+.cost-control input{
+  line-height: 32px;
+  width: 50px;
+  background: none;
+  border: none;
+  color: inherit;
+  /*outline: 1px solid red;*/
+}
+
+.cost-range{
+  position: relative;
+}
+
+.cost-range .scale {
+  margin-left: 10px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.cost-range .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .selection-form button{
-  height: 35px;
-  width: 135px;
+  position: absolute;
+  background: none;
+  border: 2px solid white;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  right: 95px;
+  bottom: 33px;
 }
 
 .sorting-block{
   border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting-sum{
+  margin-left: 70px;
+  width: 135px;
+}
+
+.sorting-range{
+  margin-left: 30px;
+}
+
+.sorting-ab{
+  margin-left: auto;
+  margin-right: 65px;
 }
 
 .results-block{
@@ -183,14 +318,16 @@ header ul li:nth-child(4){
   flex-wrap: wrap;
   align-content: flex-start;
   margin-left: 30px;
-  flex-grow: 1;
-  height: 94px;
+  width: 750px;
+  /*flex-grow: 1;*/
+  height: 100px;
   /*outline: 1px solid red;*/
 }
 
 .result-description h1{
-  min-width: 770px;
+  min-width: 750px;
   margin-top: 0px;
+  margin-bottom: 10px;
   /*outline: 1px solid red;*/
 }
 
@@ -200,26 +337,51 @@ header ul li:nth-child(4){
 }
 
 .result-item .result-description .details-item a{
+  display: block;
   background-color: #81b3d2;
   color: white;
+  margin-top: 6px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .result-item .result-description .reserve-item a{
+  display: block;
   background-color: #766357;
   color: white;
+  margin-top: 6px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.details-item {
+  margin-right: 6px;
+  /*outline: 1px solid red;*/
 }
 
 .rating-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 90px;
   margin-right: 65px;
   text-align: right;
+  /*outline: 1px solid red;*/
+}
+
+.rating-item .rating-sum{
+  align-self: flex-end;
+  background-color: #f2f2f2;
+  color: #666666;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 footer{

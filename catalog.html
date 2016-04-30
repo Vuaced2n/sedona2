@@ -25,28 +25,30 @@
         <form class="selection-form" action="#" method="post">
           <div class="infrasrtrucure-item">
             <h2>Инфраструктура</h2>
-            <label><input type="checkbox" name="pool" value="Бассейн">Бассейн</label>
-            <label><input type="checkbox" name="parking" value="Парковка">Парковка</label>
+            <label><input type="checkbox" name="pool" value="Бассейн">Бассейн</label><br>
+            <label><input type="checkbox" name="parking" value="Парковка">Парковка</label><br>
             <label><input type="checkbox" name="wifi" value="Парковка">Wi-Fi</label>
           </div>
           <div class="housetype-item">
             <h2>Тип жилья</h2>
-            <label><input type="checkbox" name="hotel" value="Гостиница">Гостиница</label>
-            <label><input type="checkbox" name="motel" value="Мотель">Мотель</label>
+            <label><input type="checkbox" name="hotel" value="Гостиница">Гостиница</label><br>
+            <label><input type="checkbox" name="motel" value="Мотель">Мотель</label><br>
             <label><input type="checkbox" name="apartments" value="Апартаменты">Апартаменты</label>
           </div>
           <div class="cost-filter">
-            Стоимость в сутки (р):
-            <div class="cost-from">
-              <label for="from-value">От</label>
-              <input type="text" name="from" value="" id="from-value">
+            <div class="cost-filter-title">
+              Стоимость в сутки (р):
             </div>
-            <div class="cost-to">
-              <label for="to-value">До</label>
-              <input type="text" name="to" value="" id="to-value">
+            <div class="cost-control">
+              <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
+              <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
             </div>
             <div class="cost-range">
-              <input type="range" name="range-of-cost" value="">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
           </div>
           <button type="button" name="show">Показать</button>
