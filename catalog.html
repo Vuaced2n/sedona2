@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона - Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
   </head>
   <body>
     <div class="container">
@@ -25,15 +26,21 @@
         <form class="selection-form" action="#" method="post">
           <div class="infrasrtrucure-item">
             <h2>Инфраструктура</h2>
-            <label><input type="checkbox" name="pool" value="Бассейн">Бассейн</label><br>
-            <label><input type="checkbox" name="parking" value="Парковка">Парковка</label><br>
-            <label><input type="checkbox" name="wifi" value="Парковка">Wi-Fi</label>
+            <input type="checkbox" name="pool" value="Бассейн" id="checkbox01">
+            <label for="checkbox01">Бассейн</label>
+            <input type="checkbox" name="parking" value="Парковка" id="checkbox02">
+            <label for="checkbox02">Парковка</label>
+            <input type="checkbox" name="wifi" value="Парковка" id="checkbox03">
+            <label for="checkbox03">Wi-Fi</label>
           </div>
           <div class="housetype-item">
             <h2>Тип жилья</h2>
-            <label><input type="checkbox" name="hotel" value="Гостиница">Гостиница</label><br>
-            <label><input type="checkbox" name="motel" value="Мотель">Мотель</label><br>
-            <label><input type="checkbox" name="apartments" value="Апартаменты">Апартаменты</label>
+            <input type="checkbox" name="hotel" value="Гостиница" id="checkbox04">
+            <label for="checkbox04">Гостиница</label>
+            <input type="checkbox" name="motel" value="Мотель" id="checkbox05">
+            <label for="checkbox05">Мотель</label>
+            <input type="checkbox" name="apartments" value="Апартаменты" id="checkbox06">
+            <label for="checkbox06">Апартаменты</label>
           </div>
           <div class="cost-filter">
             <div class="cost-filter-title">
@@ -56,7 +63,7 @@
       </section>
       <section class="sorting-block">
         <div class="sorting-sum">
-          <span>Найдено:</span>
+          <span>Найдено: 3</span>
         </div>
         <div class="sorting-range">
           <span>Сортировка:</span>
@@ -68,8 +75,8 @@
         </div>
         <div class="sorting-ab">
           <ul>
-            <li><a href="#"><i>&gt;</i></a></li>
-            <li><a href="#"><i>&lt;</i></a></li>
+            <li><a href="#"><span class="icon-up-dir"></span></a></li><!--
+            --><li><a href="#"><span class="icon-down-dir"></span></a></li>
           </ul>
         </div>
       </section>
@@ -91,7 +98,7 @@
           </div>
           <div class="rating-item">
             <div class="rating-stars">
-              <i>*</i><i>*</i><i>*</i><i>*</i>
+              <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
             </div>
             <div class="rating-sum">
               <span>Рейтинг: 8,5</span>
@@ -115,7 +122,7 @@
           </div>
           <div class="rating-item">
             <div class="rating-stars">
-              <i>*</i><i>*</i>
+              <span class="icon-star"></span><span class="icon-star"></span>
             </div>
             <div class="rating-sum">
               <span>Рейтинг: 8,9</span>
@@ -138,8 +145,8 @@
             </div>
           </div>
           <div class="rating-item">
-            <div class="">
-              <i>*</i><i>*</i><i>*</i>
+            <div class="rating-stars">
+              <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
             </div>
             <div class="rating-sum">
               <span>Рейтинг: 9,2</span>
@@ -152,14 +159,15 @@
           <a href="#">#visitsedona</a>
         </div>
         <div class="social">
-          <a href="#" class="social-btn tw"><i>TW</i></a>
-          <a href="#" class="social-btn fb"><i>FB</i></a>
-          <a href="#" class="social-btn yt"><i>YT</i></a>
+          <a href="#" class="social-btn tw"><span class="icon-twitter"></span></a>
+          <a href="#" class="social-btn fb"><span class="icon-facebook"></span></a>
+          <a href="#" class="social-btn yt"><span class="icon-youtube"></span></a>
         </div>
         <div class="developer-item">
           <a href="https://htmlacademy.ru/">
-            Website by
-            <img src="http://placehold.it/50x20" alt="HTML Academy" />
+            <span>Website by</span>
+            <div class="developer-logo">
+            </div>
           </a>
         </div>
       </footer>
