@@ -100,10 +100,12 @@ header{
 header ul{
   display: flex;
 
-  height: 57px;
+  min-height: 56px;
   margin: 0;
 
   align-items: center;
+
+  line-height: 26px;
 }
 
 header ul li{
@@ -160,7 +162,7 @@ header ul li:nth-child(4){
 .welcome-block{
   flex-direction: column;
 
-  min-height: 510px;
+  /*min-height: 510px;*/
 
   background: #99a3ae;
   background-image: url("../img/background_photo.jpg");
@@ -172,7 +174,8 @@ header ul li:nth-child(4){
 }
 
 .welcome-title{
-  margin-top: 75px;
+  margin-top: 76px;
+  margin-bottom: 23px;
 }
 
 .description-text{
@@ -180,6 +183,16 @@ header ul li:nth-child(4){
   padding: 50px 0;
 
   text-align: center;
+}
+
+.description-text p{
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+.description-text h1{
+  margin-top: 11px;
+  margin-bottom: 27px;
 }
 
 .description-block{
