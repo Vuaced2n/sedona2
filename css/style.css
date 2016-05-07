@@ -451,6 +451,41 @@ header ul li:nth-child(4){
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
 }
 
+/*Анимация формы*/
+@keyframes form_opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.search-form-invisible{
+  display: none;
+}
+
+.search-form-visible{
+  display: flex;
+  animation: form_opacity 0.7s;
+}
+
+.search-form-error{
+  animation: shake 0.5s;
+}
+
 .search-form input{
   border: medium none;
   background-color: rgb(242, 242, 242);
