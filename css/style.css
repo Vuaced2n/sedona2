@@ -467,7 +467,7 @@ header ul li:nth-child(4){
   background-color: #ebebeb;
 }
 
-.search-form input:active{
+.search-form input:focus{
   background-color: #ffffff;
   outline: 2px solid #ebebeb;
 }
@@ -485,19 +485,30 @@ header ul li:nth-child(4){
 .date-of-entry-cal,
 .date-of-departure-cal{
   position: absolute;
+
   font-size: 21px;
   line-height: 26px;
+
   color: #c2c2c2;
+}
+
+.date-of-entry-cal{
+  top: 60px;
   right: 60px;
 }
 
-.date-of-entry-cal:hover,
-.date-of-departure-cal:hover{
+.date-of-departure-cal{
+  top: 127px;
+  right: 60px;
+}
+
+.date-of-entry-cal span:hover,
+.date-of-departure-cal span:hover{
   color: #000000;
 }
 
-.date-of-entry-cal:active,
-.date-of-departure-cal:active{
+.date-of-entry-cal span:active,
+.date-of-departure-cal span:active{
   color: #81b3d2;
 }
 
@@ -550,7 +561,7 @@ header ul li:nth-child(4){
   background-color: #ebebeb;
 }
 
-.search-form .amount input:active{
+.search-form .amount input:focus{
   background-color: #ffffff;
   outline: 2px solid #ebebeb;
 }
