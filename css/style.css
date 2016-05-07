@@ -474,22 +474,31 @@ header ul li:nth-child(4){
 
 .search-form input[name="date-of-entry"],
 .search-form input[name="date-of-departure"]{
-  background-image: url(../img/icon_cal_sprite.png);
-  background-repeat: no-repeat;
-  background-position: 100% -3px;
   padding-left: 15px;
 }
 
-.search-form input[name="date-of-entry"]:hover,
-.search-form input[name="date-of-departure"]:hover{
-  background-image: url(../img/icon_cal_sprite.png);
-  background-position: 100% -45px;
+.date-of-entry,
+.date-of-departure{
+  display: relative;
 }
 
-.search-form input[name="date-of-entry"]:active,
-.search-form input[name="date-of-departure"]:active{
-  background-image: url(../img/icon_cal_sprite.png);
-  background-position: 100% -87px;
+.date-of-entry-cal,
+.date-of-departure-cal{
+  position: absolute;
+  font-size: 21px;
+  line-height: 26px;
+  color: #c2c2c2;
+  right: 60px;
+}
+
+.date-of-entry-cal:hover,
+.date-of-departure-cal:hover{
+  color: #000000;
+}
+
+.date-of-entry-cal:active,
+.date-of-departure-cal:active{
+  color: #81b3d2;
 }
 
 .search-form .entry,
@@ -625,8 +634,16 @@ header ul li:nth-child(4){
   font-size: 26px;
 }
 
+.selection-form input[type="checkbox"]:disabled + label::before{
+  color: #6a6a6a;
+}
+
 .selection-form input[type="checkbox"]:checked + label::before{
   content: "\2611";
+}
+
+.selection-form input[type="checkbox"]:checked:disabled + label::before{
+  color: #6a6a6a;
 }
 
 .infrasrtrucure-item{
