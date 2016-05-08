@@ -499,11 +499,6 @@ header ul li:nth-child(4){
   padding-left: 15px;
 }
 
-.date-of-entry,
-.date-of-departure{
-  display: relative;
-}
-
 .date-of-entry-cal,
 .date-of-departure-cal{
   position: absolute;
@@ -811,10 +806,6 @@ header ul li:nth-child(4){
   background: #1c4f80;
 }
 
-.range-toggle-min {
-  left: 10;
-}
-
 .range-toggle-max {
   left: 80%;
 }
@@ -1012,7 +1003,7 @@ header ul li:nth-child(4){
   display: flex;
 
   width: 781px;
-  height: 100px;
+  min-height: 100px;
 
   -webkit-flex-wrap: wrap;
 
