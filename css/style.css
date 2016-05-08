@@ -88,13 +88,7 @@ section{
   display: flex;
 
   width: 1200px;
-  /*outline: 2px solid red;*/
 }
-
-/*img{
-  max-width: 100%;
-  height: auto;
-}*/
 
 header{
   position: relative;
@@ -106,18 +100,14 @@ header ul{
   display: -ms-flexbox;
   display: flex;
 
-  /*min-height: 56px;*/
   margin: 0;
   padding-top: 13px;
   padding-bottom: 17px;
-
-  /*align-content: center;*/
 
   line-height: 26px;
 }
 
 header ul li{
-
   box-sizing: border-box;
   width: 240px;
 
@@ -185,8 +175,6 @@ header ul li:nth-child(4){
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  /*min-height: 510px;*/
 
   background: #99a3ae;
   background-image: url("../img/background_photo.jpg");
@@ -361,7 +349,6 @@ header ul li:nth-child(4){
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*align-content: center;*/
 }
 
 .interest-item{
@@ -716,7 +703,6 @@ header ul li:nth-child(4){
 
 .housetype-item{
   width: 274px;
-  /*outline: 1px solid red;*/
 }
 
 .cost-filter{
@@ -725,7 +711,6 @@ header ul li:nth-child(4){
   box-sizing: border-box;
   width: 528px;
   padding-left: 200px;
-  /*outline: 1px solid red;*/
 }
 
 .cost-filter-title{
@@ -786,7 +771,6 @@ header ul li:nth-child(4){
   background: none;
 
   line-height: 32px;
-  /*outline: 1px solid red;*/
 }
 
 .cost-range{
@@ -985,6 +969,7 @@ header ul li:nth-child(4){
 .icon-up-dir::before,
 .icon-down-dir::before{
   margin: 0;
+  text-decoration: none;
 }
 
 .results-block{
@@ -1110,7 +1095,6 @@ header ul li:nth-child(4){
 
 .details-item {
   margin-right: 6px;
-  /*outline: 1px solid red;*/
 }
 
 .rating-item{
@@ -1136,7 +1120,6 @@ header ul li:nth-child(4){
       -ms-flex-pack: justify;
 
           justify-content: space-between;
-  /*outline: 1px solid red;*/
 }
 
 .rating-item .rating-stars{
@@ -1182,6 +1165,7 @@ footer{
       -ms-flex-align: center;
           align-items: center;
 }
+
 .footer-index{
   position: absolute;
   z-index: 2;
@@ -1209,6 +1193,7 @@ footer{
   content: "";
   background: #81b3d2;
 
+  text-decoration: none;
   font-size: 23px;
   line-height: 20px;
   color: #ffffff;
