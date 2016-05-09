@@ -830,26 +830,26 @@ header ul {
     -ms-flex-line-pack: start;
     align-content: flex-start;
 }
-.result-description h1 {
+.result-description-header {
     min-width: 750px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.result-description h1 a {
+.result-description-header a {
     font-size: 21px;
     font-weight: bold;
 }
-.result-description h1 a:hover {
+.result-description-header a:hover {
     color: #81b3d2;
 }
-.result-description h1 a:active {
+.result-description-header a:active {
     color: #b2b2b2;
 }
 .result-description a {
     text-decoration: none;
     color: #000000;
 }
-.result-description .details-item a {
+.details-item a {
     display: block;
     margin-top: 16px;
     padding: 3px 17px;
@@ -858,14 +858,14 @@ header ul {
     font-size: 14px;
     font-weight: bold;
 }
-.result-description .details-item a:hover {
+.details-item a:hover {
     background-color: #669ec0;
 }
-.result-description .details-item a:active {
+.details-item a:active {
     background-color: #5496bd;
     color: #88b6d1;
 }
-.result-description .reserve-item a {
+.reserve-item a {
     display: block;
     margin-top: 16px;
     padding: 3px 17px;
@@ -874,10 +874,10 @@ header ul {
     font-size: 14px;
     font-weight: bold;
 }
-.result-description .reserve-item a:hover {
+.reserve-item a:hover {
     background-color: #604e43;
 }
-.result-description .reserve-item a:active {
+.reserve-item a:active {
     background-color: #503e33;
     color: #857871;
 }
@@ -985,7 +985,7 @@ footer {
     font-size: 14px;
     line-height: 26px;
 }
-.developer-item a:hover {} .developer-item .developer-logo {
+.developer-item .developer-logo {
     width: 123px;
     height: 49px;
     background-image: url(../img/atml_academy_logo_spritesheet.png);
